@@ -45,25 +45,23 @@ function clickeado() {
     }
 }
 
-function introduccion() {
-    let nombre = prompt("Dime tu nombre").toLowerCase();
-    for (let intentos = 2; intentos > 0; intentos--) {  
-        if (nombre == 'hacker') {
-            alert("Bien hecho. Puedes entrar...");
-            break;
-        } else if (nombre == ("mike" || "nicolas" || "nico" || "nick")) {
-            alert(`Tu nombre es Hacker, no mientas! Tienes ${intentos} intentos!`);
-        } else {alert(`Nombre equivocado. Tienes ${intentos} intentos!!!`);}
-        nombre = prompt("Dime tu nombre").toLowerCase();
+let nombre = prompt("Dime tu nombre").toLowerCase();
+for (let intentos = 2; intentos > 0; intentos--) {  
+    if (nombre == 'hacker') {
+        alert("Bien hecho. Puedes entrar...");
+        break;
+    } else if (nombre == ("mike" || "nicolas" || "nico" || "nick")) {
+        alert(`Tu nombre es Hacker, no mientas! Tienes ${intentos} intentos!`);
+    } else {alert(`Nombre equivocado. Tienes ${intentos} intentos!!!`);}
+    nombre = prompt("Dime tu nombre").toLowerCase();
+}
+if (nombre != "hacker") {
+    alert("Te quedaste sin intentos asi que no eres el remitente indicado.");
+    alert("Fuera de aqui");
+    for (let i = 0; i < 3; i++) {
+        alert("PUTO");
     }
-    if (nombre != "hacker") {
-        alert("Te quedaste sin intentos asi que no eres el remitente indicado.");
-        alert("Fuera de aqui");
-        for (let i = 0; i < 3; i++) {
-            alert("PUTO");
-        }
-        window.close();
-    }
+    window.close();
 }
 
 function saludar() {
