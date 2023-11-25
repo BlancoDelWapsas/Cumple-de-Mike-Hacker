@@ -5,7 +5,7 @@ let saludo = document.createElement('h1');
 saludo.setAttribute('class', 'saludo');
 
 function clickeado() {
-    if  (nombre == 'hacker') {
+    if  ((typeof nombre !== 'undefined' && nombre !== null) && (nombre == 'hacker')) {
         //Chat GPT
         // Crear un elemento div
         var miDiv = document.createElement('div');
@@ -45,24 +45,24 @@ function clickeado() {
     }
 }
 
-let nombre = prompt("Dime tu nombre").toLowerCase();
-for (let intentos = 2; intentos > 0; intentos--) {  
-    if (nombre == 'hacker') {
-        alert("Bien hecho. Puedes entrar...");
-        break;
-    } else if (nombre == ("mike" || "nicolas" || "nico" || "nick")) {
-        alert(`Tu nombre es Hacker, no mientas! Tienes ${intentos} intentos!`);
-    } else {alert(`Nombre equivocado. Tienes ${intentos} intentos!!!`);}
-    nombre = prompt("Dime tu nombre").toLowerCase();
-}
-if (nombre != "hacker") {
-    alert("Te quedaste sin intentos asi que no eres el remitente indicado.");
-    alert("Fuera de aqui");
-    for (let i = 0; i < 3; i++) {
-        alert("PUTO");
+    let nombre = prompt("Dime tu nombre").toLowerCase();
+    for (let intentos = 2; intentos > 0; intentos--) {  
+        if (nombre == 'hacker') {
+            alert("Bien hecho. Puedes entrar...");
+            break;
+        } else if (nombre == ("mike" || "nicolas" || "nico" || "nick")) {
+            alert(`Tu nombre es Hacker, no mientas! Tienes ${intentos} intentos!`);
+        } else {alert(`Nombre equivocado. Tienes ${intentos} intentos!!!`);}
+        nombre = prompt("Dime tu nombre").toLowerCase();
     }
-    window.close();
-}
+    if (nombre != "hacker") {
+        alert("Te quedaste sin intentos asi que no eres el remitente indicado.");
+        alert("Fuera de aqui");
+        for (let i = 0; i < 3; i++) {
+            alert("PUTO");
+        }
+        window.close();
+    }
 
 function saludar() {
     if ((Hora > 12) && (Hora < 20)) {
@@ -75,5 +75,5 @@ function saludar() {
     header.appendChild(saludo);
 }
 
-introduccion();
+
 saludar();
