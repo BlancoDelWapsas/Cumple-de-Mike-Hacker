@@ -75,5 +75,4 @@ function saludar() {
     header.appendChild(saludo);
 }
 
-
 saludar();
