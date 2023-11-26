@@ -65,8 +65,6 @@ for (let intentos = 3; intentos > 0; intentos--) {
         break;
     } else if (nombre == ("mike" || "nicolas" || "nico" || "nick")) {
         alert(`Tu nombre es Hacker, no mientas! Tienes ${intentos} intentos!`);
-    } else if (nombre = "") {
-        alert(`Ingresa tu nombre. Tienes ${intentos} intentos!`);
     } else {alert(`Nombre equivocado. Tienes ${intentos} intentos!!!`);}
     nombre = prompt("Dime tu nombre").toLowerCase();
 }
