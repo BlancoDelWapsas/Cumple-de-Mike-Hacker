@@ -26,7 +26,7 @@ header {
 }
 
 #boton1 {
-    display: flexbox;
+    display: block;
     text-align: center;
     padding: 5px;
     border-radius: 20px;
