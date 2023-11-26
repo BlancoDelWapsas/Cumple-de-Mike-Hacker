@@ -1,6 +1,6 @@
 const Hora = new Date().getHours();
 
-let nombre = " ";
+let nombre = "pepe";
 let header = document.getElementsByTagName('header')[0];
 let saludo = document.createElement('h1');
 saludo.setAttribute('class', 'saludo');
