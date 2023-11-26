@@ -59,7 +59,7 @@ function saludar() {
 
 //Ingreso
 for (let intentos = 3; intentos > 0; intentos--) {
-    let nombre = trim(prompt("Dime tu nombre").toLowerCase());
+    let nombre = prompt("Dime tu nombre").toLowerCase();
     if (nombre == 'hacker') {
         alert("Bien hecho. Puedes entrar...");
         break;
