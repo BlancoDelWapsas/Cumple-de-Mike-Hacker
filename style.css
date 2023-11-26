@@ -35,7 +35,6 @@ header {
     margin: auto;
     padding: 10px;
     height: 30%;
-    width: 30%;
     font-size: 50px;
     border: 5px solid black;
 }
@@ -55,6 +54,6 @@ header {
     text-align: center;
     display: flex;
     margin: auto;
-    width: fit-content;
-    height: fit-content;
+    width: 50%;
+    height: 50%;
 }
