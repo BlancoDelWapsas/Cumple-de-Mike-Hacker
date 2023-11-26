@@ -45,22 +45,6 @@ function clickeado() {
     }
 }
 
-for (let intentos = 3; intentos > 0; intentos--) {
-    let nombre = prompt("Dime tu nombre").toLowerCase();
-    if (nombre == 'hacker') {
-        alert("Bien hecho. Puedes entrar...");
-        break;
-    } else if (nombre == ("mike" || "nicolas" || "nico" || "nick")) {
-        alert(`Tu nombre es Hacker, no mientas! Tienes ${intentos} intentos!`);
-    } else {alert(`Nombre equivocado. Tienes ${intentos} intentos!!!`);}
-    nombre = prompt("Dime tu nombre").toLowerCase();
-}
-if (nombre != "hacker") {
-    alert("Te quedaste sin intentos asi que no eres el remitente indicado.");
-    alert("Fuera de aqui!!!");
-    window.close();
-}
-
 function saludar() {
     if ((Hora > 12) && (Hora < 20)) {
         saludo.innerHTML = 'Buenas tardes Hacker';
@@ -72,4 +56,23 @@ function saludar() {
     header.appendChild(saludo);
 }
 
+
+//Ingreso
+for (let intentos = 3; intentos > 0; intentos--) {
+    let nombre = trim(prompt("Dime tu nombre").toLowerCase());
+    if (nombre == 'hacker') {
+        alert("Bien hecho. Puedes entrar...");
+        break;
+    } else if (nombre == ("mike" || "nicolas" || "nico" || "nick")) {
+        alert(`Tu nombre es Hacker, no mientas! Tienes ${intentos} intentos!`);
+    } else if (nombre = "") {
+        alert(`Ingresa tu nombre. Tienes ${intentos} intentos!`);
+    } else {alert(`Nombre equivocado. Tienes ${intentos} intentos!!!`);}
+    nombre = prompt("Dime tu nombre").toLowerCase();
+}
+if (nombre != "hacker") {
+    alert("Te quedaste sin intentos asi que no eres el remitente indicado.");
+    alert("Fuera de aqui!!!");
+    window.close();
+}
 saludar();
