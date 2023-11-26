@@ -45,24 +45,21 @@ function clickeado() {
     }
 }
 
+for (let intentos = 3; intentos > 0; intentos--) {
     let nombre = prompt("Dime tu nombre").toLowerCase();
-    for (let intentos = 2; intentos > 0; intentos--) {  
-        if (nombre == 'hacker') {
-            alert("Bien hecho. Puedes entrar...");
-            break;
-        } else if (nombre == ("mike" || "nicolas" || "nico" || "nick")) {
-            alert(`Tu nombre es Hacker, no mientas! Tienes ${intentos} intentos!`);
-        } else {alert(`Nombre equivocado. Tienes ${intentos} intentos!!!`);}
-        nombre = prompt("Dime tu nombre").toLowerCase();
-    }
-    if (nombre != "hacker") {
-        alert("Te quedaste sin intentos asi que no eres el remitente indicado.");
-        alert("Fuera de aqui");
-        for (let i = 0; i < 3; i++) {
-            alert("PUTO");
-        }
-        window.close();
-    }
+    if (nombre == 'hacker') {
+        alert("Bien hecho. Puedes entrar...");
+        break;
+    } else if (nombre == ("mike" || "nicolas" || "nico" || "nick")) {
+        alert(`Tu nombre es Hacker, no mientas! Tienes ${intentos} intentos!`);
+    } else {alert(`Nombre equivocado. Tienes ${intentos} intentos!!!`);}
+    nombre = prompt("Dime tu nombre").toLowerCase();
+}
+if (nombre != "hacker") {
+    alert("Te quedaste sin intentos asi que no eres el remitente indicado.");
+    alert("Fuera de aqui!!!");
+    window.close();
+}
 
 function saludar() {
     if ((Hora > 12) && (Hora < 20)) {
