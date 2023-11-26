@@ -1,5 +1,6 @@
 const Hora = new Date().getHours();
 
+let nombre = " ";
 let header = document.getElementsByTagName('header')[0];
 let saludo = document.createElement('h1');
 saludo.setAttribute('class', 'saludo');
@@ -58,7 +59,7 @@ function saludar() {
 
 
 //Ingreso
-let nombre = prompt("Dime tu nombre").toLowerCase();
+nombre = prompt("Dime tu nombre").toLowerCase();
 for (let intentos = 3; intentos > 0; intentos--) {
     if (nombre == 'hacker') {
         alert("Bien hecho. Puedes entrar...");
