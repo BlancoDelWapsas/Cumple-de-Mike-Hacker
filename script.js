@@ -5,7 +5,7 @@ let saludo = document.createElement('h1');
 saludo.setAttribute('class', 'saludo');
 
 function clickeado() {
-    if  ((typeof nombre !== 'undefined' && nombre !== null) && (nombre == 'hacker')) {
+    if  (nombre == 'hacker') {
         //Chat GPT
         // Crear un elemento div
         var miDiv = document.createElement('div');
