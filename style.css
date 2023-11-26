@@ -32,10 +32,11 @@ header {
     color: black;
     background-color: whitesmoke;
     margin: auto;
+    padding: 10px;
     height: 30%;
-    width: auto;
+    width: 30%;
     font-size: 50px;
-    border: 3% solid black;
+    border: 5px solid black;
     
 }
 
@@ -50,11 +51,6 @@ header {
     margin: 0;
 }
 
-.insulto {
-    text-align: center;
-    display: flex;
-    margin: auto;
-}
 .insulto {
     text-align: center;
     display: flex;
